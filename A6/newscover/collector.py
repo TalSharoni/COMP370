@@ -4,7 +4,7 @@ import os
 import argparse
 
 def main():
-    parser = argparse.ArgumentParser(description='New articles collection tool')
+    parser = argparse.ArgumentParser(description='News articles collection tool')
     parser.add_argument('-k', '--api_key', required=True, help='API key required to fetch news')
     parser.add_argument('-b', '--lookback', type=int, default=10, help='Range of days from today, 10 days if not specified')
     parser.add_argument('-i', '--input_file', required=True, help='Input JSON file with keyword lists')
